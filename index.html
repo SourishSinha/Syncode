@@ -1,38 +1,232 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<title>SynCode</title>
+	<style type="text/css">
+	.grid-container
+	{
+		display: grid;
+		grid-template-columns: auto auto auto auto auto;
+		grid-gap: 10px;
+		padding: 10px;
+	}
+
+	.grid-container > div {
+  		background-color: #707070;
+  		text-align: center;
+  		padding: 20px 0;
+  		font-size: 30px;
+	}
+
+	* {
+  		box-sizing: border-box;
+	}
+
+	.heading {
+  		font-size: 25px;
+  		margin-right: 25px;
+	}
+
+	.fa {
+  		font-size: 25px;
+		}
+
+	.checked {
+  		color: orange;
+		}
+
+	.side {
+  		float: left;
+  		width: 15%;
+  		margin-top: 10px;
+  		padding-left: 10px;
+	}
+
+	.middle {
+  		float: left;
+  		width: 70%;
+  		margin-top: 10px;
+	}
+
+	.right {
+  		text-align: right;
+	}
+
+	.row:after {
+  		content: "";
+  		display: table;
+  		clear: both;
+	}
+
+	.bar-container {
+  		width: 100%;
+  		background-color: #707070;
+  		text-align: center;
+  		color: white;
+	}
+
+	.bar-5 {width: 60%; height: 18px; background-color: #439A86;}
+	.bar-4 {width: 30%; height: 18px; background-color: #439A86;}
+	.bar-3 {width: 10%; height: 18px; background-color: #439A86;}
+	.bar-2 {width: 4%; height: 18px; background-color: #439A86;}
+	.bar-1 {width: 15%; height: 18px; background-color: #439A86;}
+
+	@media (max-width: 400px) {
+  		.side, .middle {
+    		width: 100%;
+  		}
+  		.right {
+    		display: none;
+  		}
+	}
+	
+</style>
 </head>
 <body>
-	<hr>
-	<h1><b>Let's</b></h1>
-	<h2><b>Get Started ...</b></h2>
-	<hr>
-	<br>
-	<h2><u>Libraries</u></h2>
-  	<div class="row">
-  		<div class="column">
-  			<a href="main.html">
-		  	<img src="html5.png" width:"20" height="50">
-		    <h3><b>HTML</b></h3>
-		</div>    
-		<div class="column">
-		    <img src="c.png" width:"20" height="50">
-		    <h3><b>C</b></h3>
-		</div>
-		<div class="column">
-		    <img src="c-logo-icon-28394.png" width:"20" height="50">
-		    <h3><b>C++</b></h3>
-		</div>
-		<div class="column">
-		    <img src="python.png" width:"20" height="50">
-		    <h3><b>Python</b></h3>
-		</div>
-		<div class="column">
-		    <img src="java.png" width:"20" height="50">
-		    <h3><b>JAVA</b></h3>
-		</div>
+	<div style="background-color: #324342;">
+	<div class="header" style="background-color: #67E6BE; padding-left: 10px"><h1> SynCode </h1>
+		<h4>Code Editor</h4>
+		<div style="text-align: right; background-color: #828282; padding-right: 10px;"><pre style="color: #67E6BE"><h4>Libraries   Feedback   About Us   Contact Us   Sign in</h4></pre></div></div>
+	<hr style="color: #707070;>
+	<div style="color: #67E6BE;">
+	<div style="color:  #67E6BE">
+	<h1 style="padding-left: 10px"><b>Let's</b></h1>
+	<h2 style="padding-left: 10px"><b>Get Started ...</b></h2>
 	</div>
-    
+	<hr style="background-color: #707070">
+	<br><br>
+	<h2 style="color: #439A86; padding-left: 10px"><u>Libraries</u></h2><br>
+	<!---->
+  	<div class="grid-container">
+  		
+		<div>
+			<a href="main.html">
+		  	<img src="html5.png" width:"90" height="120">
+		    <h3><b>HTML</b></h3></a>
+		</div>    
+		<div>
+			<a href="main.html">
+		    <img src="c.png" width:"90" height="120">
+		    <h3><b>C</b></h3></a>
+		</div>
+		<div>
+			<a href="main.html">
+		    <img src="c-logo-icon-28394.png" width:"90" height="120">
+		    <h3><b>C++</b></h3></a>
+		</div>
+		<div>
+			<a href="main.html">
+		    <img src="python.png" width:"90" height="120">
+		    <h3><b>Python</b></h3></a>
+		</div>
+		<div>
+			<a href="main.html">
+		    <img src="java.png" width:"90" height="120">
+		    <h3><b>JAVA</b></h3></a>
+		<!--</a>-->
+		</div></div>
+		<br>
+		<hr style="background-color: #707070">
+		<br><br>
+		<h2 style="color: #439A86; padding-left: 10px; page-break-before: 20px"><u>Feedbacks</u></h2><br>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<div style="box-sizing: border-box; padding-left: 10px; border-color: #67E6BE">
+		<span class="heading" style="color: #67E6BE; padding-left: 10px">User Rating</span>
+		<span class="fa fa-star checked"></span>
+		<span class="fa fa-star checked"></span>
+		<span class="fa fa-star checked"></span>
+		<span class="fa fa-star checked"></span>
+		<span class="fa fa-star"></span>
+		<p style="color: #67E6BE; padding-left: 10px">4.1 average based on 254 reviews.</p>
+		<hr style="border:3px; color: #67E6BE">
+
+		<div class="row">
+		  <div class="side">
+		    <div style="padding-left: 50px; color: #ACA4A4">5 star</div>
+		  </div>
+		  <div class="middle">
+		    <div class="bar-container">
+		      <div class="bar-5"></div>
+		    </div>
+		  </div>
+		  <div class="side right">
+		    <div style="padding-right: 180px; color: #ACA4A4">150</div>
+		  </div>
+		  <div class="side">
+		    <div style="padding-left: 50px; color: #ACA4A4">4 star</div>
+		  </div>
+		  <div class="middle">
+		    <div class="bar-container">
+		      <div class="bar-4"></div>
+		    </div>
+		  </div>
+		  <div class="side right">
+		    <div style="padding-right: 180px; color: #ACA4A4">63</div>
+		  </div>
+		  <div class="side">
+		    <div style="padding-left: 50px; color: #ACA4A4">3 star</div>
+		  </div>
+		  <div class="middle">
+		    <div class="bar-container">
+		      <div class="bar-3"></div>
+		    </div>
+		  </div>
+		  <div class="side right">
+		    <div style="padding-right: 180px; color: #ACA4A4">15</div>
+		  </div>
+		  <div class="side">
+		    <div style="padding-left: 50px; color: #ACA4A4">2 star</div>
+		  </div>
+		  <div class="middle">
+		    <div class="bar-container">
+		      <div class="bar-2"></div>
+		    </div>
+		  </div>
+		  <div class="side right">
+		    <div style="padding-right: 180px; color: #ACA4A4">6</div>
+		  </div>
+		  <div class="side">
+		    <div style="padding-left: 50px; color: #ACA4A4">1 star</div>
+		  </div>
+		  <div class="middle">
+		    <div class="bar-container">
+		      <div class="bar-1"></div>
+		    </div>
+		  </div>
+		  <div class="side right">
+		    <div style="padding-right: 180px; color: #ACA4A4">20</div>
+		  </div>
+		</div>
+			</div>
+		<br>	
+		<hr style="background-color: #707070">
+		<br><br>
+		<h2 style="color: #439A86; padding-left: 10px; page-break-before: 20px"><u>About Us</u></h2><br>
+		<p style="padding-left: 90px; padding-right: 90px; padding-top: 30px; padding-bottom: 30px; background-color: #67E6BE; color: #324342">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut ero labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco poriti laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in uienply voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat norin proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut ero labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco poriti laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in uienply voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat norin proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		<br>
+		<hr style="background-color: #707070">
+		<br><br>
+		<h2 style="color: #439A86; padding-left: 10px; page-break-before: 20px"><u>Contact Us</u></h2><br>
+		<table>
+			<tr><td>
+				<table><tr style="padding: 40px; border-spacing: 25px;">
+						<td style="padding: 40px; border-spacing: 25px;"><img src="email.png" width=60></td>
+						<td style="padding: 40px; border-spacing: 25px;"><img src="linkedin.png" width=60></td>
+					</tr>
+					<tr>
+						<td style="padding: 40px; border-spacing: 25px;"><img src="phone-call.png" width=60></td>
+						<td style="padding: 40px; border-spacing: 25px;"><img src="facebook-circular-logo.png" width=60></td>
+				</table></td>
+			<td style="padding-left: 340px;"><list><h3 style="color: #7E9795">
+				<ul>Work With US</ul>
+				<ul>Privacy Policy</ul>
+				<ul>Terms & Conditions</ul>
+				<ul>Press Enquiries</ul></h3></list></td>
+			<td style="padding-left: 340px; padding-right: 40px"><h5 style="color: #7E9795">©2021 barCode</h5></td>
+			</tr>
+	</div>
 </body>
 </html>
