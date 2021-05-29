@@ -1,19 +1,69 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
 	<title>Syncodemain</title>
 </head>
-<body>
-	<div class="rows">
-	<div class="column">
-	<div align="left"><h2> Editor</h2><br>
-	<textarea rows = "30" cols = "100" placeholder="Your code here">
-    </textarea><br><input type="submit" name="Compile"></div></div><br><hr>
-   <div class="column">
-    <div align="left"><h2> Output</h2><br>
-	<textarea rows = "20" cols = "100">
-    </textarea><hr></div></div>
-    <a href="index.html">
-    <br><input type="button" value="Back"></a>
+<body style="background-color: #324342">
+	<nav id="editor" class="navbar navbar-dark bg-dark px-3">
+  <a class="navbar-brand" style="color: #67E6BE"><h2>Syncode</h2>Code Editor</a>
+  <ul class="nav nav-pills">
+    <li class="nav-item">
+      <a class="nav-link" href="#Editor" style="color: ghostwhite;">HTML</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#Editor" style="color: ghostwhite;">C</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#Editor" style="color: ghostwhite;">C++</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#Editor" style="color: ghostwhite;">Python</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#Editor" style="color: ghostwhite;">JAVA</a>
+    </li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+<div class="row" style="padding-top: 20px;">
+  <div class="col-sm-6">
+    <div class="card" style="height: 320px; background-color: black;">
+      <div class="card-body">
+        <h5 class="card-title" style="color: #439A86;">Input</h5>
+        <div class="card-body">
+        	<pre>
+
+
+
+
+
+
+
+
+        		                       </pre>
+        <a href="#" class="btn btn-primary" style="background-color: #67E6BE; color: #707070;">Compile</a>
+        <a href="#" class="btn btn-primary" style="background-color: #67E6BE; color: #707070;">Copy Highlighted Code</a>
+      </div>
+    </div>
+  </div>'
+</div>
+  <div class="col-sm-6">
+    <div class="card" style="height: 320px">
+      <div class="card-body" style="background-color: black;">
+        <h5 class="card-title" style="color: #439A86">Output</h5>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+    <a href="file:index.html">
+    <br><center><button type="button" class="btn btn-light" style="padding-left: 10px; background-color: #67E6BE">Back</button></center></a>
 </body>
 </html>
